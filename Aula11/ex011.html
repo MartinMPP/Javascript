@@ -9,19 +9,23 @@
 
 <body>
   <h1>Verificando Cidadania</h1>
-  País de nascimento: <input type="text" id="pais" autocapitalize="characters"> <input type="submit" value="verificar" onclick="ver()">
+  País de nascimento: <input type="text" id="pais"> <input type="submit" value="verificar" onclick="ver()">
   <div id="cid">
 
   </div>
   <script>
     function ver() {
-      var pais = document.querySelector('input#pais').value
+      var pais = document.querySelector('input#pais').value.toUpperCase()
       var cid = document.getElementById('cid')
-      cid.innerHTML = `Você nasceu em ${pais}`
-      if (pais=='brasil'){
-        cid.innerHTML+=` então você é Brasileiro.`
-      }else {
-        cid.innerHTML+=` então você é estrangeiro.`
+      cid.innerHTML = `<p>Você nasceu em ${pais}</p>`
+      if (pais == 'BRASIL') {
+        cid.innerHTML += ` <p>então você é <strong>BRASILEIRO</strong>.</p>`
+      } else {
+        if (pais == 'BRAZIL') {
+          cid.innerHTML += ` <p>então você é <strong>BRASILEIRO</strong>, mas <strong>BRASIL</strong> se escreve com <strong>S</strong></p>`
+        } else {
+          cid.innerHTML += `então você é <strong>ESTRANGEIRO</strong>`
+        }
       }
 
 

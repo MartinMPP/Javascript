@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nacionalidade</title>
+</head>
+
+<body>
+  <h1>Verificando Cidadania</h1>
+  País de nascimento: <input type="text" id="pais" autocapitalize="characters"> <input type="submit" value="verificar" onclick="ver()">
+  <div id="cid">
+
+  </div>
+  <script>
+    function ver() {
+      var pais = document.querySelector('input#pais').value
+      var cid = document.getElementById('cid')
+      cid.innerHTML = `Você nasceu em ${pais}`
+      if (pais=='brasil'){
+        cid.innerHTML+=` então você é Brasileiro.`
+      }else {
+        cid.innerHTML+=` então você é estrangeiro.`
+      }
+
+
+    }
+
+  </script>
+</body>
+
+</html>

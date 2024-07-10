@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+body {
+  background-image: linear-gradient(#01053d, #f57e1d);
+  width: 100vw;
+  height: 100vh;
+  font: normal 15pt arial;
+  margin: auto;
+  text-align: center;
+
+}
+
+header {
+  color: white;
+
+}
+
+section {
+  background-color: white;
+  width: 70vw;
+  height: 40vh;
+  margin: auto;
+  border-radius: 10px;
+  padding: 35 px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.507);
+
+}
+div{
+  text-align: center;
+  padding: 10px;
+  margin:auto;
+}
+
+section#hora>div#foto>img#imagem {
+  display: block;
+  border: solid rgba(0, 0, 0, 0.24);
+  height: 30vh;
+  width: 15vw;
+  background-size: cover;
+  border-radius: 50%;
+  margin: auto;
+
+}
+
+footer {
+  color: white;
+  font-size: 0.5em;
+
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  font-style: italic;
+
+}
+
+footer a:hover {
+  text-decoration: underline;
+  font-weight: bolder;
+  transition-duration: 0.5s;
+  color: black;
+}

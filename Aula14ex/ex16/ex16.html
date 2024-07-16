@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IDADE</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header>
-    <h1>Título</h1>
+    <h1>Vamos contar</h1>
   </header>
-    <section>
-      <div>
+  <section>
+    <div id="dados">
+      <p>Início: <input type="number" name="inicio" id="inicio"></p>
+      <p>Fim: <input type="number" name="fim" id="fim"></p>
+      <p>Passo: <input type="number" name="passo" id="passo"></p>
+      <input type="button" value="contar" onclick="contar()">
 
-      </div>
-      <div>
+    </div>
+    <div id="res">
 
-      </div>
-    </section>
+    </div>
+  </section>
   <footer>
-    <p>Criado por <a href="https://github.com/MartinMPP" target="_blank">MartinMPP</a> aluno do <a href="https://www.cursoemvideo.com" target="_blank">Curso em Video</a>.</p>
+    <p>Criado por <a href="https://github.com/MartinMPP" target="_blank">MartinMPP</a> aluno do <a
+        href="https://www.cursoemvideo.com" target="_blank">Curso em Video</a>.</p>
   </footer>
   <script src="script.js"></script>
 
 </body>
+
 </html>
